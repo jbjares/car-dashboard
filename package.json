@@ -35,9 +35,14 @@
     "gulp-size": "^3.0.0",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-useref": "^3.1.5",
+    "gulp-util": "",
     "helmet": "^3.13.0",
+    "react": "^0.14.9",
+    "react-dom": "^0.14.9",
+    "save": "^2.3.2",
     "vcap_services": "^0.4.0",
     "watson-developer-cloud": "^3.7.1",
+    "watson-react-components": "^0.6.17",
     "whatwg-fetch": "^2.0.4"
   },
   "devDependencies": {
@@ -45,7 +50,8 @@
     "eve": "^0.5.4",
     "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
-    "supertest": "^3.1.0"
+    "supertest": "^3.1.0",
+    "ajv": "^6.0.0"
   },
   "engine": {
     "node": ">= 8.x"
@@ -53,5 +59,9 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
+  },
+  "node": {
+    "fs": "empty",
+    "child_process": "empty"
   }
 }

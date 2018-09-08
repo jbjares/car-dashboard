@@ -1,9 +1,12 @@
 applications:
-- name: car-dashboard
+- name: inbra-car-watson
   command: npm start
   path: .
-  memory: 512M
+  buildpack: sdk-for-nodejs
+  memory: 1024M
   services:
-  - my-watson-assistant-service
-  - speech-to-text-service
-  - text-to-speech-service
+  - WatsonAssistant_iCar
+  - SpeechText_iCar
+  - TextSpeech_iCar
+  env:
+    BLUEMIX_APP_MGMT_ENABLE: devconsole+shell
